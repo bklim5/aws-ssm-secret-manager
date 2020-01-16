@@ -39,7 +39,8 @@ secret_value_2 = secret_manager.get_secret('secret_name_2')
 
 2. What is the differences between `secret_name` and `secret_key_in_parameter_store` shown in the code example?
     - `secret_key_in_parameter_store` is the name of the parameter in AWS Parameter Store
-        ![AWS Parameter Store](images/AWS Parameter Store.jpg)
+
+        ![AWS Parameter Store](/images/AWS_Parameter_Store.jpg)
     - `secret_name` allows you to have a common variable / key name to access to the value of secret given different environment
     - For example, you have a `secret_name` - `DB_PASSWORD`. In dev environment your `secret_key_in_parameter_store` might be set to `DEV_DB_PASSWORD` while your prod environment it's set to `PROD_DB_PASSWORD`. Using SecretManager, you can retrieve the value for different environment using the common key name `DB_PASSWORD`, i.e. 
     ```
