@@ -7,7 +7,7 @@ with open('README.md', encoding='utf-8') as f:
 
 setuptools.setup(
     name='ssm_secret_manager',
-    version='0.1.0',
+    version='0.1.1',
     url='https://github.com/bklim5/aws-ssm-secret-manager',
     description='SecretManager class to retrieve secrets from AWS System Manager Parameter Store',
     author='BK Lim',
@@ -17,6 +17,7 @@ setuptools.setup(
     install_requires=[
         'boto3'
     ],
+    keywords = ['secret manager', 'AWS', 'Parameter Store'], 
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
